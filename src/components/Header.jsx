@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { Link } from 'react-scroll'; 
+import zenn from "../images/zenn.png";
 
 const HeaderContainer = styled.div`
     display: flex;
@@ -14,14 +15,20 @@ const Title = styled.h2`
 
 const IntroduceContainer = styled.div`
     display:flex;
-    margin-left:350px;
+    margin-left:300px;
 `
 
 const Introduce = styled.h3`
     font-size:30px;
-    margin-left:80px;
+    margin-left:60px;
     cursor: pointer;
-`
+`;
+
+const Img = styled.img`
+    width:120px;
+    height:30px;
+    margin:37px 0px 0px 40px;
+`;
 
 const Header = () => {
     return (
@@ -32,11 +39,14 @@ const Header = () => {
                 <Introduce>Profile</Introduce>
             </Link>
             <Link to="techstack" smooth={true} duration={500}>
-                <Introduce>Tech Stack</Introduce>
+                <Introduce>TechStack</Introduce>
             </Link>
             <Link to="vision" smooth={true} duration={500}>
                 <Introduce>Vision</Introduce>
             </Link>
+            <a href="https://zenn.dev/aukri1690" target="_blank" rel="noopener noreferrer">
+                <Img src={zenn}/>
+            </a>
         </IntroduceContainer>
         </HeaderContainer>
     );
