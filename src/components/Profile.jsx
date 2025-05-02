@@ -2,9 +2,9 @@ import styled from "styled-components";
 import icon from "../images/icon.jpg";
 
 const Header = styled.h2`
-    font-size:40px;
+    font-size:50px;
     font-family:"Comic Sans MS";
-    margin:15px 0px 15px 255px;
+    margin:50px 0px 50px 570px;
 `;
 
 const ProfileContainer = styled.div`
@@ -16,7 +16,7 @@ const Img = styled.img`
     width:220px;
     height:220px;
     border-radius:50%;
-    margin:25px 40px 0px 210px;
+    margin:20px 40px 0px 230px;
 `;
 
 const InfoContainer = styled.div`

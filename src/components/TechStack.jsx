@@ -4,69 +4,68 @@ import react from "../images/react.svg";
 import javascript from "../images/javascript.svg";
 import styledcomponents from "../images/styledcomponents.png";
 
-const HeaderContainer = styled.div`
-    display:flex;
-`
+const Header = styled.h2`
+    font-size:45px;
+    font-family:"Comic Sans MS";
+    margin:100px 0px 0px 530px;
+`;
 
 const P = styled.p`
     font-size:17px;
-    margin:73px 0px 0px 23px;
-`
-
-const Header = styled.h2`
-    font-size:35px;
-    font-family:"Comic Sans MS";
-    margin:60px 0px 0px 230px;
+    margin:20px 0px 50px 455px;
 `;
 
-const TechStackContainer = styled.div`
-    display: flex;
-    flex-direction: column;
-    margin:40px 0px 0px 235px;
+const StackContainer = styled.div`
+    display:flex;
+    flex-direction:row;
+    margin:0px 0px 0px 120px;
 `;
-
 
 const SetContainer = styled.div`
     display:flex;
-`
+    flex-direction:column;
+    text-align:center;
+    margin:0px 0px 0px 100px;
+`;
 
 const Strong = styled.strong`
-    font-size:30px;
+    font-size:20px;
     font-family:"Comic Sans MS";
-    margin:5px 0px 10px 0px;
 `;
 
 const Img = styled.img`
-    width:40px;
-    height:40px;
+    width:130px;
+    height:130px;
     margin:8px 0px 0px 3px;
 `;
 
 const TechStack = () => {
     return (
-        <>
-        <HeaderContainer>
-        <Header>TechStack</Header>
-        <P>-このサイトは以下の技術スタックで構成されています-</P>
-        </HeaderContainer>
-        <TechStackContainer>
+        <>      
+            <Header>TechStack</Header>
+            <P>-このサイトは以下の技術スタックで構成されています-</P>
+            <StackContainer >
             <SetContainer>
-                <Strong>言語:JavaScript</Strong>    
-                <Img src = {javascript}/>                          
+                <Img src = {javascript}/> 
+                <Strong>言語</Strong>
+                <Strong>JavaScript</Strong>                                           
             </SetContainer>
             <SetContainer>
-                <Strong>ライブラリ:React</Strong>  
-                <Img src = {react}/>                          
+                <Img src = {react}/> 
+                <Strong>ライブラリ</Strong> 
+                <Strong>React</Strong>                        
             </SetContainer>
-            <SetContainer>    
-                <Strong>スタイリング:styled-components</Strong>         
-                <Img src = {styledcomponents}/>             
+            <SetContainer> 
+                <Img src = {vite}/>   
+                <Strong>ビルドツール</Strong>
+                <Strong>vite</Strong>                     
+            </SetContainer> 
+            <SetContainer> 
+                <Img src = {styledcomponents}/> 
+                <Strong>スタイリング</Strong>
+                <Strong>styled-components</Strong>               
             </SetContainer>
-            <SetContainer>  
-                <Strong>ビルドツール:vite</Strong>            
-                <Img src = {vite}/>              
-            </SetContainer>
-        </TechStackContainer>
+            </StackContainer>
         </>
     );
 };

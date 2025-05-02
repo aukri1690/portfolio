@@ -10,7 +10,7 @@ const HeaderContainer = styled.div`
 
 const Title = styled.h2`
     font-size:36px;
-    margin-left:100px;
+    margin-left:70px;
 `;
 
 const IntroduceContainer = styled.div`
