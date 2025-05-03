@@ -7,7 +7,7 @@ import styledcomponents from "../images/styledcomponents.png";
 const Header = styled.h2`
     font-size:45px;
     font-family:"Comic Sans MS";
-    margin:100px 0px 0px 530px;
+    margin:140px 0px 0px 530px;
 `;
 
 const P = styled.p`

@@ -4,7 +4,7 @@ import icon from "../images/icon.jpg";
 const Header = styled.h2`
     font-size:50px;
     font-family:"Comic Sans MS";
-    margin:50px 0px 50px 570px;
+    margin:50px 0px 50px 560px;
 `;
 
 const ProfileContainer = styled.div`
@@ -16,7 +16,7 @@ const Img = styled.img`
     width:220px;
     height:220px;
     border-radius:50%;
-    margin:20px 40px 0px 230px;
+    margin:20px 40px 0px 220px;
 `;
 
 const InfoContainer = styled.div`
