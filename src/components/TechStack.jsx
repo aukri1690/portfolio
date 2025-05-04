@@ -7,25 +7,25 @@ import styledcomponents from "../images/styledcomponents.png";
 const Header = styled.h2`
     font-size:45px;
     font-family:"Comic Sans MS";
-    margin:140px 0px 0px 530px;
+    margin:140px 0px 0px 520px;
 `;
 
 const P = styled.p`
     font-size:17px;
-    margin:20px 0px 50px 455px;
+    margin:20px 0px 50px 430px;
 `;
 
 const StackContainer = styled.div`
     display:flex;
     flex-direction:row;
-    margin:0px 0px 0px 120px;
+    margin:0px 0px 0px 60px;
 `;
 
 const SetContainer = styled.div`
     display:flex;
     flex-direction:column;
     text-align:center;
-    margin:0px 0px 0px 100px;
+    margin:0px 0px 0px 120px;
 `;
 
 const Strong = styled.strong`
