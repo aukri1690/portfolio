@@ -15,7 +15,7 @@ const Title = styled.h2`
 
 const IntroduceContainer = styled.div`
     display:flex;
-    margin-left:300px;
+    margin-left:470px;
 `
 
 const Introduce = styled.h3`
@@ -40,9 +40,6 @@ const Header = () => {
             </Link>
             <Link to="techstack" smooth={true} duration={500}>
                 <Introduce>TechStack</Introduce>
-            </Link>
-            <Link to="vision" smooth={true} duration={500}>
-                <Introduce>Vision</Introduce>
             </Link>
             <a href="https://zenn.dev/aukri1690" target="_blank" rel="noopener noreferrer">
                 <Img src={zenn}/>
